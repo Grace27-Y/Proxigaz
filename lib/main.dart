@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'ProxiGas',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 232, 90, 20),
-          primary: const Color.fromARGB(255, 232, 90, 20),
+          seedColor: Colors.orange,
+          primary: Colors.orange,
         ),
         useMaterial3: true,
       ),

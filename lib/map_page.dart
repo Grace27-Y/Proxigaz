@@ -53,7 +53,7 @@ class _MapPageState extends State<MapPage> {
                     width: 40,
                     height: 40,
                     decoration: const BoxDecoration(
-                      color: Color.fromARGB(255, 232, 90, 20),
+                      color: Colors.orange,
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
@@ -204,7 +204,7 @@ class _MapPageState extends State<MapPage> {
                     width: 56,
                     height: 56,
                     decoration: const BoxDecoration(
-                      color: Color.fromARGB(255, 232, 90, 20),
+                      color: Colors.orange,
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(
@@ -245,10 +245,10 @@ class _MapPageState extends State<MapPage> {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(
-          color: isSelected ? Color.fromARGB(255, 232, 90, 20) : Colors.white,
+          color: isSelected ? Colors.orange : Colors.white,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: isSelected ? Color.fromARGB(255, 232, 90, 20) : Colors.grey[300]!,
+            color: isSelected ? Colors.orange : Colors.grey[300]!,
             width: 1,
           ),
         ),
@@ -287,7 +287,7 @@ class _BottomNavItem extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: isActive ? Color.fromARGB(255, 232, 90, 20) : Colors.grey,
+            color: isActive ? Colors.orange : Colors.grey,
             size: 24,
           ),
           const SizedBox(height: 4),
@@ -295,7 +295,7 @@ class _BottomNavItem extends StatelessWidget {
             label,
             style: TextStyle(
               fontSize: 12,
-              color: isActive ? Color.fromARGB(255, 232, 90, 20) : Colors.grey,
+              color: isActive ? Colors.orange : Colors.grey,
               fontWeight: isActive ? FontWeight.w600 : FontWeight.normal,
             ),
           ),

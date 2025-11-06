@@ -213,7 +213,7 @@ class _AuthPageState extends State<AuthPage> {
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 232, 90, 20),
+                  color: Colors.orange,
                   // Optionnel: Ajouter une image de fond si vous en avez une
                   // image: DecorationImage(
                   //   image: AssetImage('assets/images/background.jpg'),
@@ -226,7 +226,7 @@ class _AuthPageState extends State<AuthPage> {
                 ),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 232, 90, 20),
+                    color: Colors.orange,
                   ),
                   child: Center(
                     child: Column(
@@ -243,7 +243,7 @@ class _AuthPageState extends State<AuthPage> {
                           child: Icon(
                             Icons.local_gas_station,
                             size: 50,
-                            color: const Color.fromARGB(255, 232, 90, 20),
+                            color: Colors.orange,
                           ),
                         ),
                         const SizedBox(height: 16),
@@ -458,7 +458,7 @@ class _AuthPageState extends State<AuthPage> {
                               child: const Text(
                                 'Mot de passe oublié ?',
                                 style: TextStyle(
-                                  color:  Color.fromARGB(255, 232, 90, 20),
+                                  color: Colors.orange,
                                   fontSize: 14,
                                 ),
                               ),
@@ -469,7 +469,7 @@ class _AuthPageState extends State<AuthPage> {
                         ElevatedButton(
                           onPressed: _isLoading ? null : _handleSubmit,
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromARGB(255, 232, 90, 20),
+                            backgroundColor: Colors.orange,
                             foregroundColor: Colors.white,
                             padding: const EdgeInsets.symmetric(vertical: 16),
                             shape: RoundedRectangleBorder(
@@ -518,7 +518,7 @@ class _AuthPageState extends State<AuthPage> {
                               child: Text(
                                 _isLogin ? 'S\'inscrire' : 'Se connecter',
                                 style: const TextStyle(
-                                  color:  Color.fromARGB(255, 232, 90, 20),
+                                  color: Colors.orange,
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -585,14 +585,14 @@ class _AuthPageState extends State<AuthPage> {
                               children: [
                                 Icon(
                                   Icons.chat_bubble_outline,
-                                  color: _isWhatsAppHovered ? Colors.white :  Color.fromARGB(255, 10, 125, 14),
+                                  color: _isWhatsAppHovered ? Colors.white : Colors.green,
                                   size: 20,
                                 ),
                                 const SizedBox(width: 8),
                                 Text(
                                   'Continuer avec WhatsApp',
                                   style: TextStyle(
-                                    color: _isWhatsAppHovered ? Colors.white : Color.fromARGB(255, 10, 125, 14),
+                                    color: _isWhatsAppHovered ? Colors.white : Colors.green,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                   ),

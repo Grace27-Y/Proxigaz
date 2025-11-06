@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
               width: double.infinity,
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
               decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 232, 90, 20),
+                color: Colors.orange,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20),
@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                         _FunctionCard(
                           icon: Icons.whatshot,
                           title: 'Vérifier disponibilité',
-                          color: Color.fromARGB(255, 232, 90, 20),
+                          color: Colors.orange,
                           onTap: () {
                             Navigator.push(
                               context,
@@ -205,7 +205,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: Row(
                         children: [
-                          Icon(Icons.whatshot, color: Color.fromARGB(255, 232, 90, 20), size: 24),
+                          Icon(Icons.whatshot, color: Colors.orange, size: 24),
                           const SizedBox(width: 12),
                           const Expanded(
                             child: Text(
@@ -360,7 +360,7 @@ class _HomePageState extends State<HomePage> {
                     width: 56,
                     height: 56,
                     decoration: const BoxDecoration(
-                      color: Color.fromARGB(255, 232, 90, 20),
+                      color: Colors.orange,
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(
@@ -542,7 +542,7 @@ class _BottomNavItem extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: isActive ? Color.fromARGB(255, 232, 90, 20) : Colors.grey,
+            color: isActive ? Colors.orange : Colors.grey,
             size: 24,
           ),
           const SizedBox(height: 4),
@@ -550,7 +550,7 @@ class _BottomNavItem extends StatelessWidget {
             label,
             style: TextStyle(
               fontSize: 12,
-              color: isActive ? Color.fromARGB(255, 232, 90, 20) : Colors.grey,
+              color: isActive ? Colors.orange : Colors.grey,
               fontWeight: isActive ? FontWeight.w600 : FontWeight.normal,
             ),
           ),

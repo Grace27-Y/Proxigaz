@@ -105,7 +105,7 @@ class _AvailabilityPageState extends State<AvailabilityPage> {
               width: double.infinity,
               padding: const EdgeInsets.all(20),
               decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 232, 90, 20),
+                color: Colors.orange,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20),
@@ -298,7 +298,7 @@ class _AvailabilityPageState extends State<AvailabilityPage> {
                     width: 56,
                     height: 56,
                     decoration: const BoxDecoration(
-                      color: Color.fromARGB(255, 232, 90, 20),
+                      color: Colors.orange,
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(
@@ -339,10 +339,10 @@ class _AvailabilityPageState extends State<AvailabilityPage> {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(
-          color: isSelected ? Color.fromARGB(255, 232, 90, 20) : Colors.white,
+          color: isSelected ? Colors.orange : Colors.white,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: isSelected ? Color.fromARGB(255, 232, 90, 20): Colors.grey[300]!,
+            color: isSelected ? Colors.orange : Colors.grey[300]!,
             width: 1,
           ),
         ),
@@ -485,7 +485,7 @@ class _BoutiqueCard extends StatelessWidget {
                   Text(
                     '${product['price']} FCFA',
                     style: const TextStyle(
-                      color: Color.fromARGB(255, 232, 90, 20),
+                      color: Colors.orange,
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
                     ),
@@ -531,7 +531,7 @@ class _BoutiqueCard extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: onOrder,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 232, 90, 20),
+                    backgroundColor: Colors.orange,
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -577,7 +577,7 @@ class _BottomNavItem extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: isActive ? Color.fromARGB(255, 232, 90, 20) : Colors.grey,
+            color: isActive ? Colors.orange : Colors.grey,
             size: 24,
           ),
           const SizedBox(height: 4),
@@ -585,7 +585,7 @@ class _BottomNavItem extends StatelessWidget {
             label,
             style: TextStyle(
               fontSize: 12,
-              color: isActive ? Color.fromARGB(255, 232, 90, 20): Colors.grey,
+              color: isActive ? Colors.orange : Colors.grey,
               fontWeight: isActive ? FontWeight.w600 : FontWeight.normal,
             ),
           ),
