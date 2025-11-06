@@ -98,7 +98,7 @@ class _OrderPageState extends State<OrderPage> {
               width: double.infinity,
               padding: const EdgeInsets.all(20),
               decoration: const BoxDecoration(
-                color: Colors.orange,
+                color: Color.fromARGB(255, 232, 90, 20),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20),
@@ -339,7 +339,7 @@ class _OrderPageState extends State<OrderPage> {
                                 style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.orange,
+                                  color: Color.fromARGB(255, 232, 90, 20),
                                 ),
                               ),
                             ],
@@ -363,7 +363,7 @@ class _OrderPageState extends State<OrderPage> {
                           ),
                         ),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
+                          backgroundColor: Color.fromARGB(255, 232, 90, 20),
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
@@ -423,7 +423,7 @@ class _OrderPageState extends State<OrderPage> {
                     width: 56,
                     height: 56,
                     decoration: const BoxDecoration(
-                      color: Colors.orange,
+                      color: Color.fromARGB(255, 232, 90, 20),
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(
@@ -467,7 +467,7 @@ class _OrderPageState extends State<OrderPage> {
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? Colors.orange : Colors.grey[300]!,
+            color: isSelected ? Color.fromARGB(255, 232, 90, 20) : Colors.grey[300]!,
             width: isSelected ? 2 : 1,
           ),
         ),
@@ -481,7 +481,7 @@ class _OrderPageState extends State<OrderPage> {
                   _selectedSize = value;
                 });
               },
-              activeColor: Colors.orange,
+              activeColor: Color.fromARGB(255, 232, 90, 20),
             ),
             const SizedBox(width: 12),
             Container(
@@ -515,7 +515,7 @@ class _OrderPageState extends State<OrderPage> {
             Text(
               '${_prices[size]} FCFA',
               style: const TextStyle(
-                color: Colors.orange,
+                color: Color.fromARGB(255, 232, 90, 20),
                 fontSize: 15,
                 fontWeight: FontWeight.w600,
               ),
@@ -547,7 +547,7 @@ class _OrderPageState extends State<OrderPage> {
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? Colors.orange : Colors.grey[300]!,
+            color: isSelected ? Color.fromARGB(255, 232, 90, 20) : Colors.grey[300]!,
             width: isSelected ? 2 : 1,
           ),
         ),
@@ -561,12 +561,12 @@ class _OrderPageState extends State<OrderPage> {
                   _deliveryMode = val!;
                 });
               },
-              activeColor: Colors.orange,
+              activeColor: Color.fromARGB(255, 232, 90, 20),
             ),
             const SizedBox(width: 12),
             Icon(
               icon,
-              color: isSelected ? Colors.orange : Colors.grey,
+              color: isSelected ? Color.fromARGB(255, 232, 90, 20) : Colors.grey,
               size: 24,
             ),
             const SizedBox(width: 12),
@@ -595,7 +595,7 @@ class _OrderPageState extends State<OrderPage> {
             Text(
               price,
               style: TextStyle(
-                color: isFree ? Colors.green : Colors.orange,
+                color: isFree ? Colors.green : Color.fromARGB(255, 232, 90, 20),
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
               ),
@@ -624,7 +624,7 @@ class _OrderPageState extends State<OrderPage> {
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? Colors.orange : Colors.grey[300]!,
+            color: isSelected ? Color.fromARGB(255, 232, 90, 20) : Colors.grey[300]!,
             width: isSelected ? 2 : 1,
           ),
         ),
@@ -638,12 +638,12 @@ class _OrderPageState extends State<OrderPage> {
                   _paymentMethod = val!;
                 });
               },
-              activeColor: Colors.orange,
+              activeColor: Color.fromARGB(255, 232, 90, 20),
             ),
             const SizedBox(width: 12),
             Icon(
               icon,
-              color: isSelected ? Colors.orange : Colors.grey,
+              color: isSelected ? Color.fromARGB(255, 232, 90, 20): Colors.grey,
               size: 24,
             ),
             const SizedBox(width: 12),
@@ -685,7 +685,7 @@ class _BottomNavItem extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: isActive ? Colors.orange : Colors.grey,
+            color: isActive ? Color.fromARGB(255, 232, 90, 20): Colors.grey,
             size: 24,
           ),
           const SizedBox(height: 4),
@@ -693,7 +693,7 @@ class _BottomNavItem extends StatelessWidget {
             label,
             style: TextStyle(
               fontSize: 12,
-              color: isActive ? Colors.orange : Colors.grey,
+              color: isActive ? Color.fromARGB(255, 232, 90, 20) : Colors.grey,
               fontWeight: isActive ? FontWeight.w600 : FontWeight.normal,
             ),
           ),
