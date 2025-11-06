@@ -458,7 +458,7 @@ class _AuthPageState extends State<AuthPage> {
                               child: const Text(
                                 'Mot de passe oublié ?',
                                 style: TextStyle(
-                                  color: const Color.fromARGB(255, 232, 90, 20),
+                                  color:  Color.fromARGB(255, 232, 90, 20),
                                   fontSize: 14,
                                 ),
                               ),
@@ -518,7 +518,7 @@ class _AuthPageState extends State<AuthPage> {
                               child: Text(
                                 _isLogin ? 'S\'inscrire' : 'Se connecter',
                                 style: const TextStyle(
-                                  color: const Color.fromARGB(255, 232, 90, 20),
+                                  color:  Color.fromARGB(255, 232, 90, 20),
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -585,14 +585,14 @@ class _AuthPageState extends State<AuthPage> {
                               children: [
                                 Icon(
                                   Icons.chat_bubble_outline,
-                                  color: _isWhatsAppHovered ? Colors.white : Colors.green,
+                                  color: _isWhatsAppHovered ? Colors.white :  Color.fromARGB(255, 10, 125, 14),
                                   size: 20,
                                 ),
                                 const SizedBox(width: 8),
                                 Text(
                                   'Continuer avec WhatsApp',
                                   style: TextStyle(
-                                    color: _isWhatsAppHovered ? Colors.white : Colors.green,
+                                    color: _isWhatsAppHovered ? Colors.white : Color.fromARGB(255, 10, 125, 14),
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                   ),
