@@ -213,7 +213,7 @@ class _AuthPageState extends State<AuthPage> {
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Colors.orange,
+                  color: const Color.fromARGB(255, 232, 90, 20),
                   // Optionnel: Ajouter une image de fond si vous en avez une
                   // image: DecorationImage(
                   //   image: AssetImage('assets/images/background.jpg'),
@@ -226,7 +226,7 @@ class _AuthPageState extends State<AuthPage> {
                 ),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.orange,
+                    color: const Color.fromARGB(255, 232, 90, 20),
                   ),
                   child: Center(
                     child: Column(
@@ -243,7 +243,7 @@ class _AuthPageState extends State<AuthPage> {
                           child: Icon(
                             Icons.local_gas_station,
                             size: 50,
-                            color: Colors.orange,
+                            color: const Color.fromARGB(255, 232, 90, 20),
                           ),
                         ),
                         const SizedBox(height: 16),
@@ -458,7 +458,7 @@ class _AuthPageState extends State<AuthPage> {
                               child: const Text(
                                 'Mot de passe oublié ?',
                                 style: TextStyle(
-                                  color: Colors.orange,
+                                  color: const Color.fromARGB(255, 232, 90, 20),
                                   fontSize: 14,
                                 ),
                               ),
@@ -469,7 +469,7 @@ class _AuthPageState extends State<AuthPage> {
                         ElevatedButton(
                           onPressed: _isLoading ? null : _handleSubmit,
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.orange,
+                            backgroundColor: const Color.fromARGB(255, 232, 90, 20),
                             foregroundColor: Colors.white,
                             padding: const EdgeInsets.symmetric(vertical: 16),
                             shape: RoundedRectangleBorder(
@@ -518,7 +518,7 @@ class _AuthPageState extends State<AuthPage> {
                               child: Text(
                                 _isLogin ? 'S\'inscrire' : 'Se connecter',
                                 style: const TextStyle(
-                                  color: Colors.orange,
+                                  color: const Color.fromARGB(255, 232, 90, 20),
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                 ),
