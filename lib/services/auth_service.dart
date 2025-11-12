@@ -13,7 +13,7 @@ class AuthService extends ChangeNotifier {
     // Simuler une requête API
     await Future.delayed(const Duration(seconds: 1));
     
-    // TODO: Remplacer par une vraie logique d'authentification
+    // TODO: Remplacer par une vraie logique d'authentification 
     // Pour l'instant, on accepte n'importe quel numéro de téléphone/mot de passe
     _isAuthenticated = true;
     _userPhone = phone;
